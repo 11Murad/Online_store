@@ -32,7 +32,7 @@ public class OrderController {
 
     @PutMapping("/{id}")
     public void updateOrderByOrderId(@PathVariable Integer id, @RequestBody OrderRequest order) {
-        this.orderService.update(id, order);
+        orderService.update(id, order);
     }
 
 }
